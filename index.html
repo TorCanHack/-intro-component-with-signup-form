@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!--font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <!-- css-->
   <link rel="stylesheet" href="styles.css"/>
-  <title>Frontend Mentor | Four card feature section</title>
+ 
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,47 +22,35 @@
 </head>
 <body>
   <main>
-    <article class="container">
-      <div class="heading">
-        <h1>Reliable, efficient delivery <br/>
-        <strong>Powered by Technology</strong></h1>
 
-        <p>Our Artificial Intelligence powered tools use millions of project data points 
-        to ensure that your project is successful</p>
-      </div>  
-   
-      <div id="supervisor" class="box">
-        <h2>Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="/Users/ayua/Downloads/four-card-feature-section-master/images/icon-supervisor.svg" alt="icon"/>
-      </div>
-    
+    <h1 class="pitch">Learn to code by watching others</h1>
 
-      <div id="team_builder" class="box">
-        <h2>Team Builder</h2>
-        <p>Scans our talent network to create the optimal team for your project</p>
-        <img src="/Users/ayua/Downloads/four-card-feature-section-master/images/icon-team-builder.svg" alt="icon"/>
-      </div>
+    <p class="pitch">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+    but understanding how developers think is invaluable.</p> 
 
-      <div id="karma" class="box">
-       <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img src="/Users/ayua/Downloads/four-card-feature-section-master/images/icon-karma.svg" alt="icon"/>
-      </div>
+    <button class="subscription"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
 
-      <div id="calculator" class="box">
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="/Users/ayua/Downloads/four-card-feature-section-master/images/icon-calculator.svg" alt="icon"/>
-      </div>
-    </article>
+    <form id="myForm" action="" method="post">
+      <input id="firstName" placeholder="First Name" class="error-active" />
+      <span class="error" id="firstNameError"></span>
+      <input id="lastName" placeholder="Last Name" /> 
+      <span class="error" id="lastNameError"></span>
+      <input id="email" type="email" placeholder="Email Address" />
+      <span class="error" id="emailError"></span>
+      <input id="password" type="password" placeholder="Password"/>
+      <span class="error" id="passwordError"></span>
 
+      <button>Claim your free trial</button> 
+
+      <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
+    </form>
   </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Ayua Michael</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
