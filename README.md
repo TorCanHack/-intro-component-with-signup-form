@@ -17,8 +17,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -39,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/TorCanHack/-intro-component-with-signup-form)
+- Live Site URL: [live site URL](https://torcanhack.github.io/-intro-component-with-signup-form/)
 
 ## My process
 
