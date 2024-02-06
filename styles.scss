@@ -1,0 +1,163 @@
+$primary_red:  hsl(0, 78%, 62%);
+$primary_cyan:  hsl(180, 62%, 55%);
+$primary_orange: hsl(34, 97%, 64%);
+$primary_blue: hsl(212, 86%, 64%);
+$neutralvdb: hsl(234, 12%, 34%);
+$neutralgb: hsl(229, 6%, 66%);
+$neutralvlg: hsl(0, 0%, 98%);
+$small: 	0.9375rem;
+$medium: 1.2rem;
+$large: 1.45rem;
+$mobile: 360px;
+$bigscreen: 100%;
+
+* {
+    box-sizing: border-box;
+    
+}
+ 
+main {
+    width: $mobile;
+    margin: 0 auto;
+    background-color: $neutralvlg;
+    
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 260px;
+    gap: 1rem;
+    grid-template-rows: 200px 213px 213px 213px 213px;
+    justify-content: center;
+
+    .heading {
+        position: relative;
+        top: 3rem;
+    }
+    
+    h1 {
+        color: $neutralgb;
+        text-align: center;
+        font-size: $large;
+
+
+        strong {
+            color: $neutralvdb;
+        }
+    }
+
+    p {
+        color: $neutralgb;
+        text-align: center;
+    }
+
+
+
+    .box {
+        background-color: white;
+        border-radius: .4rem .4rem;
+        box-shadow: 0 0 1rem $neutralgb;
+        padding: 0 15px;
+
+
+        h2 {
+
+            font-size: $medium;
+            color: $neutralvdb;
+            text-align: start;
+        }
+
+        p {
+            font-size: $small;
+            text-align: start;
+        }
+
+        img {
+            position: relative;
+            bottom: -2rem;
+            left: 10rem;
+        }
+    }
+
+    #supervisor {
+        border-top: 3px solid $primary_cyan;
+    }
+
+    #team_builder {
+        border-top: 3px solid $primary_red;
+    }
+
+    #karma {
+        border-top: 3px solid $primary_orange;
+    }
+
+    #calculator {
+        border-top: 3px solid $primary_blue;
+    }
+
+    
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        
+    }
+    main {
+        overflow: hidden;
+        width: $bigscreen;
+        height: 90vh;
+        
+        
+        .container {
+            grid-template-columns: 260px 260px 260px;
+            gap: 1.3rem;
+            grid-template-rows: 200px 213px 213px 213px 213px;
+
+            h1 {
+                font-size: xx-large;
+            }
+
+            .heading {
+                grid-column: 2/3;
+                width: 500px;
+                position: relative;
+                right: 7rem;
+
+                p {
+                    position: relative;
+                    top: -1.5rem;
+                }
+            }
+
+            #supervisor {
+                grid-column: 1;
+                position: relative;
+                top: 6rem;
+                
+                
+            }
+            
+            #team_builder {
+                grid-column: 2;
+                grid-row: 2
+            }
+
+            #karma {
+                grid-column: 2;
+                grid-row: 3;
+            }
+
+            #calculator {
+                position: relative;
+                top: 6rem;
+                
+            }
+
+        }
+
+
+    }
+    
+}

@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 360px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 260px;
+  gap: 1rem;
+  grid-template-rows: 200px 213px 213px 213px 213px;
+  justify-content: center;
+}
+.container .heading {
+  position: relative;
+  top: 3rem;
+}
+.container h1 {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+  font-size: 1.45rem;
+}
+.container h1 strong {
+  color: hsl(234, 12%, 34%);
+}
+.container p {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+}
+.container .box {
+  background-color: white;
+  border-radius: 0.4rem 0.4rem;
+  box-shadow: 0 0 1rem hsl(229, 6%, 66%);
+  padding: 0 15px;
+}
+.container .box h2 {
+  font-size: 1.2rem;
+  color: hsl(234, 12%, 34%);
+  text-align: start;
+}
+.container .box p {
+  font-size: 0.9375rem;
+  text-align: start;
+}
+.container .box img {
+  position: relative;
+  bottom: -2rem;
+  left: 10rem;
+}
+.container #supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.container #team_builder {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.container #karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.container #calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+  }
+  main .container {
+    grid-template-columns: 260px 260px 260px;
+    gap: 1.3rem;
+    grid-template-rows: 200px 213px 213px 213px 213px;
+  }
+  main .container h1 {
+    font-size: xx-large;
+  }
+  main .container .heading {
+    grid-column: 2/3;
+    width: 500px;
+    position: relative;
+    right: 7rem;
+  }
+  main .container .heading p {
+    position: relative;
+    top: -1.5rem;
+  }
+  main .container #supervisor {
+    grid-column: 1;
+    position: relative;
+    top: 6rem;
+  }
+  main .container #team_builder {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  main .container #karma {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  main .container #calculator {
+    position: relative;
+    top: 6rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
